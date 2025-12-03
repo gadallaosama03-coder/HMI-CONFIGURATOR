@@ -1,4 +1,4 @@
-const CACHE_NAME = 'hmi-app-v1';
+const CACHE_NAME = 'hmi-app-v2';
 const ASSETS = [
   './',
   './index.html',
@@ -29,4 +29,5 @@ self.addEventListener('fetch', (e) => {
       return res;
     }).catch(() => caches.match(e.request))
   );
+
 });
